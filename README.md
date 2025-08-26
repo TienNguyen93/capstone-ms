@@ -1,6 +1,6 @@
-# CryptoMamba Standalone
+# Deep Learning Approaches to Cryptocurrency Price Prediction
 
-A minimal, standalone implementation of CryptoMamba for Bitcoin price prediction using State Space Models (SSMs).
+Additional approaches, including LSTM, iTransformer, and Temporal Convolutional Network (TCN), besides CryptoMamba for Bitcoin price prediction using State Space Models (SSMs)
 
 ## Features
 
@@ -79,8 +79,6 @@ CryptoMamba uses:
 - See `requirements.txt` for full list
 
 ## Citation
-
-If you use this code, please cite the original paper:
 ```bibtex
 @article{Sepehri2025CryptoMamba,
     title={CryptoMamba: Leveraging State Space Models for Accurate Bitcoin Price Prediction}, 
