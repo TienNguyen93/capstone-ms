@@ -1,42 +1,14 @@
 # Deep Learning Approaches to Cryptocurrency Price Prediction
 
-Additional approaches, including LSTM, iTransformer, and Temporal Convolutional Network (TCN), besides CryptoMamba for Bitcoin price prediction using State Space Models (SSMs)
+Leverage existed CryptoMamba structure with sentiment score and compare with other algorithms
 
-## Features
+Repository Includes:
 
-- **CryptoMamba Model**: Custom Mamba-based architecture for time-series forecasting
-- **Two Variants**: 
-  - `cmamba_nv`: Without volume data (5 features: OHLC + Timestamp)
-  - `cmamba_v`: With volume data (6 features: OHLCV + Timestamp)
-- **Complete Pipeline**: Data preprocessing, training, evaluation, and next-day prediction
-- **Trading Simulation**: Simple backtesting with buy/sell strategies
+* Implementation of CryptoMamba, LSTM, iTransformer, and Temporal Convolutional Network (TCN)
+* Code for data preprocessing, model training, evaluation metrics
 
-## Quick Start
+## Quick Start (modifications needed)
 
-1. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Train CryptoMamba without volume**:
-   ```bash
-   python scripts/training.py --config cmamba_nv --devices 1 --accelerator gpu --save_checkpoints
-   ```
-
-3. **Train CryptoMamba with volume**:
-   ```bash
-   python scripts/training.py --config cmamba_v --devices 1 --accelerator gpu --save_checkpoints
-   ```
-
-4. **Evaluate model**:
-   ```bash
-   python scripts/evaluation.py --config cmamba_v --ckpt_path checkpoints/cmamba_v.ckpt
-   ```
-
-5. **Predict next day**:
-   ```bash
-   python scripts/one_day_pred.py --config cmamba_v --ckpt_path checkpoints/cmamba_v.ckpt --data_path data/one_day_pred.csv
-   ```
 
 ## Configuration
 
